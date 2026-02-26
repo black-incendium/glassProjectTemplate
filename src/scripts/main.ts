@@ -1,9 +1,9 @@
-import { glass } from "glass";
+import { glass } from "../../submodules/glass/dist/main.js";
 import { assetsConfig } from './configs/assetsConfig.js';
 import { gameConfig } from './configs/gameConfig.js';
 import { layoutConfig } from './configs/layoutConfig.js';
-import { eventsManager } from "glass";
-import { rendererEventsData } from "glass";
+import { eventsManager } from "../../submodules/glass/dist/main.js";
+import { rendererEventsData } from "../../submodules/glass/dist/main.js";
 
 const canvas = document.querySelector('canvas');
 const gl = canvas?.getContext('webgl2', {stencil: true}) ?? null;
@@ -27,5 +27,5 @@ if (canvas !== null && gl !== null) {
 
 function startMainFlow() {
 
-    
+    console.log(1)
 }
